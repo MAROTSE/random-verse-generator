@@ -1,0 +1,151 @@
+ /* Master styles */
+ body {
+margin: 5px;
+font-family: "Lato",  sans-serif;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Navbar styles */
+
+.nav-wrapper {
+display: flex;
+justify-content: space-between;
+padding: 38px;
+border: solid 2px #434343;
+border-radius: 10px;
+margin: 2px;
+}
+
+.left-side  {
+display: flex;
+}
+
+
+.nav-wrapper > .left-side > div {
+   margin-right: 20px;
+   font-size: 0.9em;
+   text-transform:uppercase;
+
+} 
+
+.nav-link-wrapper {
+ height: 22px;
+ border-bottom: 1px solid transparent;
+ transition:border-bottom 0.5s ;
+}
+
+ .brand a {
+ color: #8a8a8a;
+ text-decoration: none;
+ transition: color 0.5s;
+ }
+ .brand:hover {
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a {
+color: #8a8a8a;
+text-decoration: none;
+transition: color 0.5s;
+color: blueviolet;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+}
+.nav-link-wrapper a:hover {
+ color: black;
+}
+ 
+/* Portifolio Styles */
+
+.portfolio-items-wrapper {
+display:grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 1px;
+padding:5px;
+
+}
+
+.portfolio-item-wrapper {
+    position : relative ;
+    border: solid 2px #434343;
+    border-radius: 10px;
+   
+    
+}
+ .portfolio-img-background {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
+.img-text-wrapper {
+    position: absolute;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+
+
+   
+}
+.logo-wrapper img {
+ width:60%;
+ 
+ /* margin-bottom: 20px; */
+
+ 
+}
+   
+.img-text-wrapper .subtitle {
+    transition: 1sec;
+    color:transparent;
+    font-weight: 600;
+}
+.img-text-wrapper:hover .subtitle {
+    font-weight: 600;
+    color:lightgreen;
+}
+.img-darken {
+transition: 1s;
+filter: brightness(10%);
+}
+.two-column-wrapper {
+    display:grid ;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img {
+ width:100%;
+ border-radius: 5px;
+}
+
+.profile-content-wrapper {
+    padding: 30px;
+    font-size: 20px;
+}
+.profile-content-wrapper h1 {
+    color:lightseagreen ;
+}
+
+
+
+
+
+
+
+
+
+
+
